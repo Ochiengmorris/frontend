@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const UserContext = createContext({});
 
-export function UserContextProvider({ children }) {
+export const UserContextProvider = ({ children }) => {
 
     const [user, setUser] = useState(null);
     const [ready, setReady] = useState(false);
@@ -16,7 +16,6 @@ export function UserContextProvider({ children }) {
             } catch (error) {
                 console.log("Error fetching user data:", error)
                 // Log out user if failed
-
             } finally {
                 setReady(true);
             }
