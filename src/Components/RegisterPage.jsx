@@ -204,7 +204,7 @@ const RegisterPage = () => {
                         </button>
                     </form>
                     <p className='flex gap-1 text-xs justify-center my-4'>
-                        Already have an account?
+                        Already have an account ?
                         <Link to={'/login'} className='text-purple-600 underline'>Sign in here</Link>
                     </p>
                     {message && <p className='text-red-700 text-center text-sm'>Passwords do not match!</p>}
