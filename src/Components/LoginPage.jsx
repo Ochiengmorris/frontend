@@ -58,8 +58,8 @@ const LoginPage = () => {
     }
 
     return (
-        <div className='bg-gray-900 h-screen p-4'>
-            <div className="mt-16 p-4 bg-white border rounded-2xl">
+        <div className='bg-gray-900 h-screen p-4 flex items-center'>
+            <div className=" p-4 bg-white border rounded-2xl mx-auto  max-w-[400px]">
                 <div className="border border-gray-300 rounded-xl p-4">
                     <div className='relative flex justify-center'>
                         <h2 className='font-bold mb-8 text-2xl p-9 text-center w-full border-b border-gray-400'>Sign In</h2>
