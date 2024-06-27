@@ -7,7 +7,7 @@ const MoneyDashCards = () => {
     const { user } = useContext(UserContext);
 
     return (
-        <div className='grid gap-4'>
+        <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             <div className="bg-gradient-to-r from-purple-800 to-blue-700 p-4 rounded-xl">
                 <div className="grid grid-cols-2 items-center">
                     <div className='text-white  font-bold h-full text-2xl items-center flex border-b-4 border-white'>
