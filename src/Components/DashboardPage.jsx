@@ -30,107 +30,117 @@ const IndexPage = () => {
           <button className='text-white px-4 py-2 bg-purple-500 font-semibold rounded-r-lg'>Copy</button>
         </div>
       </div>
-      <div>
-        <GridItem title={'Invitations Traffic'}>
-          <AreaChart />
-        </GridItem>
-      </div>
-      <div className='text-white w-full bg-slate-900 py-4 rounded-xl text-center'>
-        <div className='py-5'>
-          <h3 className='font-bold text-2xl'>0</h3>
-          <p>Total Invitations + 2.43%</p>
+      <div className='grid gap-4 grid-cols-1 lg:grid-cols-2'>
+        <div>
+          <GridItem title={'Invitations Traffic'}>
+            <AreaChart />
+          </GridItem>
         </div>
-        <div className='border-t py-5'>
-          <h3 className='font-bold text-2xl'>0</h3>
-          <p>Active Invitations + 12.43%</p>
-        </div>
-        <div className='border-t py-5'>
-          <h3 className='font-bold text-2xl'>0</h3>
-          <p>Dormant Invitations + 5.43%</p>
-        </div>
-      </div>
-      <div className="bg-white mb-4 rounded-xl">
-        <h3 className='font-bold p-4 border-b border-gray-400 w-full'>Applepay Invitations</h3>
-        <div className='px-4 border-b border-gray-400'>
-          <div className='py-2 mt-2 gap-1 flex flex-col'>
-            <label>My Username</label>
-            <input type="text"
-              placeholder='myusername@gmail.com'
-              value={`${user ? user.username : ''}`}
-              className='p-2 w-full rounded-lg border border-gray-500'
-              readOnly
-            />
+        <div className='text-white w-full bg-slate-900 py-4 flex flex-col justify-center rounded-xl text-center'>
+          <div className='py-5'>
+            <h3 className='font-bold text-2xl'>0</h3>
+            <p>Total Invitations + 2.43%</p>
           </div>
-          <div className=' py-2 gap-1 flex flex-col'>
-            <label>Invited by</label>
-            <input type="text"
-              placeholder='Admin'
-              value={`${user ? user.upline1 : ''}`}
-              className='p-2 w-full rounded-lg border border-gray-500'
-              readOnly
-            />
+          <div className='border-t py-5'>
+            <h3 className='font-bold text-2xl'>0</h3>
+            <p>Active Invitations + 12.43%</p>
           </div>
-          <div className=' py-2 mb-4 gap-1 flex flex-col'>
-            <label>My Unique Invite Link</label>
-            <div className='w-full flex'>
-              <input type="text"
-                placeholder='My unique invite link'
-                value={`http://localhost:5173/register?ref=${user ? user.username : ''}`}
-                className='p-2 w-full rounded-l-lg border border-gray-500' readOnly />
-              <button className='text-white px-4 py-2 bg-purple-500 font-semibold rounded-r-lg'>Copy</button>
-            </div>
-          </div>
-        </div>
-        <div className='p-4 flex justify-between border-b border-gray-500'>
-          <h3>All Invitations</h3>
-          <div className='border border-black rounded-full bg-red-500 text-white font-bold px-1'>
-            <p>0</p>
-          </div>
-        </div>
-        <div className='p-4 flex justify-between border-b border-gray-500'>
-          <h3>Active</h3>
-          <div className='border border-black rounded-full bg-green-500 text-white font-bold px-1'>
-            <p>0</p>
-          </div>
-        </div>
-        <div className='p-4 flex justify-between'>
-          <h3>Dormant</h3>
-          <div className='border border-black rounded-full bg-purple-500 text-white font-bold px-1'>
-            <p>0</p>
+          <div className='border-t py-5'>
+            <h3 className='font-bold text-2xl'>0</h3>
+            <p>Dormant Invitations + 5.43%</p>
           </div>
         </div>
       </div>
 
-      <div className="border border-black flex justify-between items-center bg-white rounded-xl p-4">
-        <div className="radial-progress text-primary" style={{ "--value": 70 }} role="progressbar">70%</div>
-        <div className='text-sm'>
-          <p className='font-bold'>Facebook Followers</p>
-          <p>22.14% Since Last Week</p>
+      <div className='grid gap-4 grid-cols-1 lg:grid-cols-2'>
+        <div className="bg-white mb-4 rounded-xl">
+          <h3 className='font-bold p-4 border-b border-gray-400 w-full'>Applepay Invitations</h3>
+          <div className='px-4 border-b border-gray-400'>
+            <div className='py-2 mt-2 gap-1 flex flex-col'>
+              <label>My Username</label>
+              <input type="text"
+                placeholder='myusername@gmail.com'
+                value={`${user ? user.username : ''}`}
+                className='p-2 w-full rounded-lg border border-gray-500'
+                readOnly
+              />
+            </div>
+            <div className=' py-2 gap-1 flex flex-col'>
+              <label>Invited by</label>
+              <input type="text"
+                placeholder='Admin'
+                value={`${user ? user.upline1 : ''}`}
+                className='p-2 w-full rounded-lg border border-gray-500'
+                readOnly
+              />
+            </div>
+            <div className=' py-2 mb-4 gap-1 flex flex-col'>
+              <label>My Unique Invite Link</label>
+              <div className='w-full flex'>
+                <input type="text"
+                  placeholder='My unique invite link'
+                  value={`http://localhost:5173/register?ref=${user ? user.username : ''}`}
+                  className='p-2 w-full rounded-l-lg border border-gray-500' readOnly />
+                <button className='text-white px-4 py-2 bg-purple-500 font-semibold rounded-r-lg'>Copy</button>
+              </div>
+            </div>
+          </div>
+          <div className='p-4 flex justify-between border-b border-gray-500'>
+            <h3>All Invitations</h3>
+            <div className='border border-black rounded-full bg-red-500 text-white font-bold px-1'>
+              <p>0</p>
+            </div>
+          </div>
+          <div className='p-4 flex justify-between border-b border-gray-500'>
+            <h3>Active</h3>
+            <div className='border border-black rounded-full bg-green-500 text-white font-bold px-1'>
+              <p>0</p>
+            </div>
+          </div>
+          <div className='p-4 flex justify-between'>
+            <h3>Dormant</h3>
+            <div className='border border-black rounded-full bg-purple-500 text-white font-bold px-1'>
+              <p>0</p>
+            </div>
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill='currentColor' className='size-9'>
-          <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
-        </svg>
-      </div>
-      <div className="border border-black flex justify-between items-center bg-white rounded-xl p-4">
-        <div className="radial-progress text-accent" style={{ "--value": 62 }} role="progressbar">62%</div>
-        <div className='text-sm'>
-          <p className='font-bold'>Youtube Subscribers</p>
-          <p>15.14% Since Last Week</p>
+        <div className='grid gap-4 mb-4'>
+          <div className="border border-black flex justify-between items-center bg-white rounded-xl p-4">
+            <div className="radial-progress text-primary" style={{ "--value": 70 }} role="progressbar">70%</div>
+            <div className='text-sm'>
+              <p className='font-bold'>Facebook Followers</p>
+              <p>22.14% Since Last Week</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill='currentColor' className='size-9'>
+              <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+            </svg>
+          </div>
+          <div className="border border-black flex justify-between items-center bg-white rounded-xl p-4">
+            <div className="radial-progress text-accent" style={{ "--value": 62 }} role="progressbar">62%</div>
+            <div className='text-sm'>
+              <p className='font-bold'>Youtube Subscribers</p>
+              <p>15.14% Since Last Week</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill='currentColor' className='size-9'>
+              <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+            </svg>
+          </div>
+          <div className="border border-black flex justify-between items-center bg-white rounded-xl p-4">
+            <div className="radial-progress text-secondary" style={{ "--value": 79 }} role="progressbar">79%</div>
+            <div className='text-sm'>
+              <p className='font-bold'>X Tweets</p>
+              <p>32.14% Since Last Week</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill='currentColor' className='size-9'>
+              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+            </svg>
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill='currentColor' className='size-9'>
-          <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
-        </svg>
+
       </div>
-      <div className="border border-black flex justify-between items-center bg-white rounded-xl p-4">
-        <div className="radial-progress text-secondary" style={{ "--value": 79 }} role="progressbar">79%</div>
-        <div className='text-sm'>
-          <p className='font-bold'>X Tweets</p>
-          <p>32.14% Since Last Week</p>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill='currentColor' className='size-9'>
-          <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-        </svg>
-      </div>
+
+
+
 
       <div className='bg-slate-900 rounded-xl overflow-hidden'>
         <GridItem title={'Selling Region'}>
