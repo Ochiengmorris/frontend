@@ -25,7 +25,7 @@ const StorePage = () => {
                         <div className='w-full h-[240px]'>
                             <img src={shoe_1} alt="Calvin Klein Shoes" class="w-full h-full object-cover" />
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 bg-white'>
                             <p className='font-bold text-lg'>KSh 3,000</p>
                             <h2 class="text-sm p-1">Calvin Klein Shoes Outdoor hiking shoes</h2>
                             <div className='flex items-center gap-1'>
@@ -39,7 +39,7 @@ const StorePage = () => {
                         <div className='w-full h-[240px]'>
                             <img src={shoe_2} alt="Calvin Klein Shoes" class="w-full h-full object-cover" />
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 bg-white'>
                             <p className='font-bold text-lg'>KSh 3,000</p>
                             <h2 class="text-sm p-1">Calvin Klein Shoes Outdoor hiking shoes</h2>
                             <div className='flex items-center gap-1'>
@@ -53,7 +53,7 @@ const StorePage = () => {
                         <div className='w-full h-[240px]'>
                             <img src={shoe_3} alt="Calvin Klein Shoes" class="w-full h-full object-cover" />
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 bg-white'>
                             <p className='font-bold text-lg'>KSh 3,000</p>
                             <h2 class="text-sm p-1">Calvin Klein Shoes Outdoor hiking shoes</h2>
                             <div className='flex items-center gap-1'>
@@ -67,7 +67,7 @@ const StorePage = () => {
                         <div className='w-full h-[240px]'>
                             <img src={shoe_4} alt="Calvin Klein Shoes" class="w-full h-full object-cover" />
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 bg-white'>
                             <p className='font-bold text-lg'>KSh 3,000</p>
                             <h2 class="text-sm p-1">Calvin Klein Shoes Outdoor hiking shoes</h2>
                             <div className='flex items-center gap-1'>
@@ -81,7 +81,7 @@ const StorePage = () => {
                         <div className='w-full h-[240px]'>
                             <img src={shoe_5} alt="Calvin Klein Shoes" class="w-full h-full object-cover" />
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 bg-white'>
                             <p className='font-bold text-lg'>KSh 3,000</p>
                             <h2 class="text-sm p-1">Calvin Klein Shoes Outdoor hiking shoes</h2>
                             <div className='flex items-center gap-1'>
@@ -95,7 +95,7 @@ const StorePage = () => {
                         <div className='w-full h-[240px]'>
                             <img src={shoe_6} alt="Calvin Klein Shoes" class="w-full h-full object-cover" />
                         </div>
-                        <div className='p-4'>
+                        <div className='p-4 bg-white'>
                             <p className='font-bold text-lg'>KSh 3,000</p>
                             <h2 class="text-sm p-1">Calvin Klein Shoes Outdoor hiking shoes</h2>
                             <div className='flex items-center gap-1'>
