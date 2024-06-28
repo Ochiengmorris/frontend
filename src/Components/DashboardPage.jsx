@@ -17,7 +17,7 @@ const IndexPage = () => {
   const { user } = useContext(UserContext);
 
   return (
-    <div className='grid gap-4 px-6 bg-gray-200 pt-4 pb-16'>
+    <div className='grid gap-4 px-6 pt-4 pb-16'>
       {/*  Notice Card */}
       <div className="rounded-lg p-4 text-black bg-teal-200">
         <NotificationCard />
